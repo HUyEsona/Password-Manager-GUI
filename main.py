@@ -2,6 +2,8 @@ from tkinter import *
 from tkinter import messagebox
 from random import choice, randint, shuffle
 import pyperclip
+#------------------------------------ CONSTANT ------------------------------------#
+VERSION_APP = 'version 1.0'
 #------------------------------------ PASSWORD GENERATOR ------------------------------------#
 def password_generator():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -58,10 +60,15 @@ canvas.grid(row=0, column=1)
 #labelS
 website_label = Label(text='website')
 website_label.grid(row=1,column=0)
+
 email_label = Label(text='Email/Username')
 email_label.grid(row=2,column=0)
+
 password_label = Label(text='password')
 password_label.grid(row=3,column=0)
+
+version_label = Label(text=VERSION_APP)
+version_label.grid(row=6, column=2)
 
 #entries
 website_entry = Entry(width=35)
