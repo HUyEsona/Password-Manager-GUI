@@ -81,7 +81,7 @@ email_entry.insert(0,'Usergmail@gmail.com')
 
 password_entry = Entry(width=35)
 password_entry.grid(row=3,column=1,columnspan=2)
-password_entry.insert(0,'Ex:12345...')
+# password_entry.insert(0,'Ex:12345...')
 
 #buttons
 generate_password_button = Button(text='Generate password',command=password_generator)
