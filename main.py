@@ -71,7 +71,7 @@ def save_password():
             finally:
                 # write into data.txt
                 with open('data.txt', mode='a') as text_file:
-                    text_file.write(f"Website: {website}\nEmail: {email}\nPassword: {password}\n\n")
+                    text_file.write(f"{website} | {email} | {password}")
 
                 # Clean entries
                 website_entry.delete(0, END)
